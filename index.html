@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuoco-faccina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Capocuoco-Faccine</h1>
+        <p>Seleziona 3 iconcine e crea la tua ricetta</p>
+        <div class="logo">👨🏻‍🍳</div>
+    </header>
+    
+    <main>
+        <div class="contenitore">
+            <div class="ingredienti">
+                <div class="ingrediente">🥩</div>
+                <div class="ingrediente">🍅</div>
+                <div class="ingrediente">🧀</div>
+                <div class="ingrediente">🍆</div>
+                <div class="ingrediente">🥦</div>
+                <div class="ingrediente">🐟</div>
+                <div class="ingrediente">🥑</div>
+                <div class="ingrediente">🍗</div>
+                <div class="ingrediente">🥕</div>
+                <div class="ingrediente">🥬</div>
+                <div class="ingrediente">🥚</div>
+                <div class="ingrediente">🥔</div>
+            </div>
+
+            <div class="tazza">
+                <div class="parte-tazza">?</div>
+                <div class="parte-tazza">?</div>
+                <div class="parte-tazza">?</div>
+            </div>
+
+            <button id="cucina-btn" class="invisibile">
+                Crea ricetta!
+            </button>
+
+        </div>
+    </main>
+
+    <div class="carico invisibile">
+        <img src="images/loader.gif" alt="loader">
+        <div class="avviso-carico">Loading...</div>
+    </div>
+
+    <div class="modale invisibile">
+        <div class="in-modale">
+            <div class="chiudi-modale">
+                <img src="images/close-button.svg" alt="chiudi">
+            </div>
+            <div class="modale-img">
+                <!-- <img src="https://picsum.photos/512" alt="" srcset=""> -->
+            </div>
+            <div class="nel-modale">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in blanditiis praesentium itaque quas
+                    tenetur est quod, deserunt dignissimos, neque perferendis ipsa? Ducimus, dolores incidunt. Qui alias
+                    expedita, quia id magni perferendis aut a vero ipsum, optio, praesentium error. Minima inventore
+                    dolores sunt expedita ea quae, quod natus a ipsa fugit cumque, beatae atque magnam rem laboriosam
+                    laborum ducimus amet hic distinctio error deserunt numquam modi! Rerum asperiores tenetur aperiam
+                    ratione praesentium, autem eum iste, consequuntur ducimus modi excepturi incidunt? Magni explicabo
+                    nesciunt minima molestias, sunt animi, facere doloremque, soluta corporis rem nisi placeat. Nulla
+                    adipisci ducimus beatae officia sequi.</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+</body>
+</html>
