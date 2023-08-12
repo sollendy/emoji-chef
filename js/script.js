@@ -1,7 +1,7 @@
 // imposto OPENAI
 const OPENAI = {
     API_BASE_URL: 'https://api.openai.com/v1',
-    API_KEY: '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', // inserisci qui la chiave
+    API_KEY: '', // inserisci qui la chiave
     GPT_MODEL: 'gpt-3.5-turbo',
     API_COMPLETIONS: '/chat/completions',
     API_IMAGE: '/images/generations'
