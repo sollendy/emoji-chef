@@ -1,7 +1,7 @@
 // imposto OPENAI
 const OPENAI = {
     API_BASE_URL: 'https://api.openai.com/v1',
-    API_KEY: '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', // inserisci qui la chiave
+    API_KEY: '', // inserisci qui la chiave
     GPT_MODEL: 'gpt-3.5-turbo',
     API_COMPLETIONS: '/chat/completions',
     API_IMAGE: '/images/generations'
@@ -61,6 +61,11 @@ function mettiIngrediente(ingrediente) {
 async function creaRicetta() {
     // console.log(bowl)
     loading.classList.remove("invisibile");
+    loadingMessage.innerText = messaggiCaricamento();
+
+    const messageInterval = setInterval(() => {
+        loadingMessage.innerText = messaggiCaricamento();
+    }, 2000);
 
     const prompt = `/
     Crea una ricetta con questi ingredienti: ${bowl.join(', ')}.
@@ -89,6 +94,7 @@ Le tue risposte sono solo in formato JSON come questo esempio:
 
     loading.classList.add("invisibile");
     modal.classList.remove("invisibile");
+    clearInterval(messageInterval);
 
     modalContent.innerHTML = `\
     <h2>${ricetta.titolo}</h2>
